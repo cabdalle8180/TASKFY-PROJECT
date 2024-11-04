@@ -44,7 +44,7 @@ exports.createTask = (req, res) => {
     });
 };
 
-// Update an existing task
+
 exports.updateTask = (req, res) => {
     const taskId = parseInt(req.url.split('/').pop());
     let tasks = readTasksFromFile();
